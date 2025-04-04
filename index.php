@@ -9,12 +9,14 @@
 </head>
 <body>
     <div id="chat-container">
-    	<div id="chat-box">
+        <div id="chat-box">
+                <!-- Texto padrão -->
+                <div id="empty-message">Aqui para apoiar você na jornada contra o vício. Conte-me como está se sentindo hoje.</div>
         </div>
-    	<div class="input-container">
-    		<input type="text" id="user-input"  placeholder="Comece digitando 'Hoje estou...'">
-                <button onclick="sendMessage()"><img src="./assets/plane.png" alt="Icone para enviar mensagem" class="btn_enviar"></button>
-    	</div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Comece digitando 'Hoje estou...'">
+            <button onclick="sendMessage()"><img src="./assets/upArrow.png" alt="Ícone para enviar mensagem" class="btn_enviar"></button>
+        </div>
     </div>
     <script type="text/javascript" src="./scripts/chatbot.js"></script>
 </body>

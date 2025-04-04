@@ -24,7 +24,10 @@ if (!$input || !isset($input['message'])) {
 $user_message = trim($input['message']);
 
 // Define the AI's role or context
-$ai_role = "Você é um assistente de IA chamado AstraAI que ajuda os usuários na sua superaçao e recuperaçao contra os vícios. Forneça respostas claras, com carisma, concisas e úteis. Sempre tentando ajudar na estimulaçao da dopamina sem os vicios. Sem citar que vai elevar a autoestima da pessoa";
+$ai_role = "Você é um assistente de IA chamado AstraAI que ajuda os usuários na sua superaçao e recuperaçao contra os vícios.
+ Forneça respostas claras, com carisma, concisas e úteis. Sempre tentando ajudar na estimulaçao da dopamina sem os vicios.
+ Caso a pessoa tenha vícios, você deverá fornecer respostas que ajudem a superação do vício.
+ Sem citar que vai elevar a autoestima da pessoa.";
 
 // Combine the AI role with the user's message
 $prompt = $ai_role . "\n\nUser: " . $user_message;
