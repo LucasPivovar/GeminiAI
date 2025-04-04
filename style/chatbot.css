@@ -102,6 +102,10 @@ button {
     position: relative;
 }
 
+#clear-history {
+    color: black;
+}
+
 button:focus{
     border: none;
 }
@@ -131,6 +135,23 @@ button:focus{
 #chat-box::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 10px;
+}
+
+/* Header */
+#chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+#chat-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    
 }
 
 /* Animações */
